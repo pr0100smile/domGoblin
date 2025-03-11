@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/8c507j82erld5pl1?svg=true)](https://ci.appveyor.com/project/pr0100smile/domgoblin)
+
 # Домашнее задание к занятию "2. DOM"
 
 Правила сдачи задания:
