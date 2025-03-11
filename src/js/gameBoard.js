@@ -1,4 +1,4 @@
-export default class Board {
+export default class GameBoard {
   constructor(size=4){
       this.size = size;
   }
@@ -11,15 +11,15 @@ export default class Board {
       const body = document.querySelector('body');
       body.insertBefore(container, body.firstChild);
       
-      const board = document.createElement('div');
-      container.appendChild(board);
-      board.classList.add('board');
+      const gameBoard = document.createElement('div');
+      container.appendChild(gameBoard);
+      gameBoard.classList.add('gameBoard');
 
       for (let i = 0; i < Math.floor(this.size) ** 2; i++){
           const cell = document.createElement('div');
           cell.classList.add('cell');         
-          board.appendChild(cell);
+          gameBoard.appendChild(cell);
       }
-      return board;
+      return gameBoard;
   }
 }

@@ -1,7 +1,7 @@
 import GameBoard from '../gameBoard';
 
 
-test('формирование игрового поля', () => {
+test('создание игрового поля', () => {
   const gameBoard = new GameBoard();
   const boards = gameBoard.gameBoard(4);
   const received = boards.querySelectorAll('.cell');
