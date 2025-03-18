@@ -7,25 +7,24 @@ export default class Game {
   }
 
   init() {
-    this.board = this.boards.gameBoard()
+    this.board = this.boards.gameBoard();
     this.start();
   }
 
-  setPosition () {
+  setPosition() {
     const position = Math.floor(Math.random() * this.size ** 2);
     this.delPosition(this.position);
     if (position === this.position) {
       this.setPosition();
       return;
-    }
-    else {
-      this.board.children[position].classList.add('goblin');
-      this.position = position;      
+    } else {
+      this.board.children[position].classList.add("goblin");
+      this.position = position;
     }
   }
 
-  delPosition (position) {
-    this.board.children[position].classList.remove('goblin');
+  delPosition(position) {
+    this.board.children[position].classList.remove("goblin");
   }
 
   start() {
